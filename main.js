@@ -4,10 +4,32 @@ let numero1 = 0;
 let numero2 = 0;
 let resultado = 0;
 
-opcion = prompt('Ingrese la opción deseada:\n\n+    Sumar:          S\n -    Restar:          R\n *    Múltiplicar:  M\n ^   Potencia:      P\n /    Dividir:         D\n\n ->  SALIR:          E\n');
+function menu(){
+    opcion = prompt('Ingrese la opción deseada:\n\n+    Sumar:          S\n -    Restar:          R\n *    Múltiplicar:  M\n ^   Potencia:      P\n /    Dividir:         D\n\n ->  SALIR:          E\n');
+}
+function potencia(num1, num2){
+    resultado = 1;
+    if (num1 === 1 && num2 != 0) {
+        alert("El resultado = " + 1);
+    }
+    else if (num1 != 0 && num2 === 0) {
+        alert("El resultado = " + 1);
+    }
+    else if (num1 === 0) {
+        alert("El resultado = " + 0);
+    }
+    else if (num2 === 1) {
+        alert("El resultado = " + num1);
+    } else {
+        for (let i = 0; i < num2; i++) {
+            resultado = resultado * num1;
+        }
+        alert("El resultado  = " + resultado);
+    }
+}
 
+menu(); 
 while (opcion.toUpperCase() != "E"){
-
     switch (opcion.toUpperCase()) {
         case "S":
             alert("Vamos a Sumar dos números");
@@ -33,24 +55,7 @@ while (opcion.toUpperCase() != "E"){
             alert("Potencia de un Número:");
             numero1 = parseInt(prompt("Ingrese el Primer número, Base: "));
             numero2 = parseInt(prompt("Ingrese el segundo número, Exponente: "));
-            resultado = 1;
-            if (numero1 === 1 && numero2 != 0) {
-                alert("El resultado = " + 1);
-            }
-            else if (numero1 != 0 && numero2 === 0) {
-                alert("El resultado = " + 1);
-            }
-            else if (numero1 === 0) {
-                alert("El resultado = " + 0);
-            }
-            else if (numero2 === 1) {
-                alert("El resultado = " + numero1);
-            } else {
-                for (let i = 0; i < numero2; i++) {
-                    resultado = resultado * numero1;
-                }
-                alert("El resultado  = " + resultado);
-            }
+            potencia(numero1,numero2);
             break;
         case "D":
             alert("Vamos a Dividir dos números");
@@ -67,6 +72,6 @@ while (opcion.toUpperCase() != "E"){
             opcion = prompt("La opción ingresada no es correcta:\n\n Si desea salir Ingrese la letra E \n\n De lo contrario prersione cualquier tecla.\n\n ")
 
     }
-    opcion = prompt('Ingrese la opción deseada:\n\n+    Sumar:          S\n -    Restar:          R\n *    Múltiplicar:  M\n ^   Potencia:      P\n /    Dividir:         D\n\n ->  SALIR:          E\n');
+    menu();
 }
 alert("Gracias por usar nuestra calculadora. :)");
