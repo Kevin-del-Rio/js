@@ -25,6 +25,7 @@ function potencia(num1, num2){
             resultado = resultado * num1;
         }
         alert("El resultado  = " + resultado);
+        return resultado;
     }
 }
 
@@ -56,6 +57,7 @@ while (opcion.toUpperCase() != "E"){
             numero1 = parseInt(prompt("Ingrese el Primer número, Base: "));
             numero2 = parseInt(prompt("Ingrese el segundo número, Exponente: "));
             potencia(numero1,numero2);
+            console.log(resultado);
             break;
         case "D":
             alert("Vamos a Dividir dos números");
