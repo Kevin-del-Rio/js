@@ -1,14 +1,15 @@
 ## Descripción 🏝
 
-Primer desafío en JavaScript de Coderhouse.
-elabore una calculadora muy sencilla implementando todo lo que vimos hasta el momento.  
+Elabore una calculadora muy sencilla implementando todo lo que vimos hasta el momento.  
 ## Herramientas:   
 **prompt()** || **alert()** || **paseint()** || **toUpperCase()**  
 **if else**  
 **for**  
 **while**  
 **switch**  
-**&&** || **===** || **!=**  
+**&&** || **===** || **!=** 
+**function potencia**
+**functio menu**
 
 ## Autor ✒️
 **Kevin-del-Rio**
