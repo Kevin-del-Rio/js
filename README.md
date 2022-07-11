@@ -7,9 +7,9 @@ Elabore una calculadora muy sencilla implementando todo lo que vimos hasta el mo
 **for**  
 **while**  
 **switch**  
-**&&** || **===** || **!=** 
-**function potencia**
-**functio menu**
+**&&** || **===** || **!=**   
+**function potencia**  
+**function menu**  
 
 ## Autor ✒️
 **Kevin-del-Rio**
